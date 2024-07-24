@@ -1,0 +1,53 @@
+go mod init github.com/roni-boiz/rss-aggregator
+
+go build
+
+go run .
+go build && ./rss-aggregtor
+
+go get github.com/joho/godotenv
+go mod vendor
+
+sudo apt install postgresql postgresql-contrib
+sudo apt-get install pgadmin3
+
+go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
+go install github.com/pressly/goose/v3/cmd/goose@latest
+
+
+Inside .../sql/schema
+=================
+goose postgres postgres://rssauthuser:postgres@localhost:5432/rssagg up
+goose postgres postgres://rssauthuser:postgres@localhost:5432/rssagg down
+
+sqlc generate
+
+
+Serial No. 	Command 						Description
+1 		psql -d database -U user -W 				Connects to a database under a specific user
+2 		psql -h host -d database -U user -W 			Connect to a database that resides on another host
+3 		psql -U user -h host "dbname=db sslmode=require" 	Use SSL mode for the connection
+4 		\c dbname 						Switch connection to a new database
+5 		\l 							List available databases
+6 		\dt 							List available tables
+7 		\d table_name 						Describe a table such as a column, type, modifiers of columns, etc.
+8 		\dn 							List all schemes of the currently connected database
+9 		\df 							List available functions in the current database
+10 		\dv 							List available views in the current database
+11 		\du 							List all users and their assign roles
+12 		SELECT version(); 					Retrieve the current version of PostgreSQL server
+13 		\g 							Execute the last command again
+14 		\s 							Display command history
+15 		\s filename 						Save the command history to a file
+16 		\i filename 						Execute psql commands from a file
+17 		\? 							Know all available psql commands
+18 		\h 							Get help
+19 		\e 							Edit command in your own editor
+20 		\a 							Switch from aligned to non-aligned column output
+21 		\H 							Switch the output to HTML format
+22 		\q 							Exit psql shell
+
+sudo lsof -i :<port_number>
+sudo lsof -i :8000
+
+kill -9 1581600
