@@ -42,11 +42,11 @@ This repository contains an RSS Feed Aggregator built using Go and PostgreSQL. T
 
 2. #### Install Dependencies
     ```bash
-    go get github.com/joho/godotenv
-    go get github.com/go-chi/chi
-    go get github.com/go-chi/cors
-    go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
-    go install github.com/pressly/goose/v3/cmd/goose@latest
+    $ go get github.com/joho/godotenv
+    $ go get github.com/go-chi/chi
+    $ go get github.com/go-chi/cors
+    $ go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
+    $ go install github.com/pressly/goose/v3/cmd/goose@latest
     ```
 
 3. #### Import Dependencies
@@ -55,7 +55,7 @@ This repository contains an RSS Feed Aggregator built using Go and PostgreSQL. T
     $ go mod tidy
     ```
 
-4. #### Generate SQL files
+4. #### Generate SQL Schemas
     ```
     $ sqlc generate
     ```
@@ -145,4 +145,4 @@ This repository contains an RSS Feed Aggregator built using Go and PostgreSQL. T
     ```
 
 > [!NOTE]
-> Need to execute above command multiple time to delete all the SQL resources.
+> Need to execute above command multiple time to delete all the SQL schemas.
