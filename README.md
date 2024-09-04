@@ -88,52 +88,52 @@ This repository contains an RSS Feed Aggregator built using Go and PostgreSQL. T
 
     1. #### HEALTH
 
-        image
+        ![healthz](https://github.com/user-attachments/assets/49016aaf-4780-4182-9704-223b3d5e45bd)
 
     2. #### ERROR
 
-        image
+        ![err](https://github.com/user-attachments/assets/fa19a486-45fb-4e5d-a493-8a02b8704066)
 
-    3. #### Users
+    3. #### USERS
 
         POST
 
-        image
+        ![users_post](https://github.com/user-attachments/assets/46aa1fa6-1349-4d30-bddc-779cea2a26a7)
 
         GET
 
-        image
+        ![users_get](https://github.com/user-attachments/assets/9e908d92-0809-46ae-8b58-30897d61f965)
 
-
-    4. #### Feeds
+    4. #### FEEDS
 
         POST
         
-        image
+        ![feeds_post](https://github.com/user-attachments/assets/f86d92c0-8e75-49b2-9cde-a076962da1e4)
 
         GET
 
-        image
+        ![feeds_get](https://github.com/user-attachments/assets/74388701-2816-4f80-8b84-08fe3a4efe6c)
 
-    5. #### Feed Follows
+
+    5. #### FEED FOLLOWS
 
         POST
 
-        image
+        ![feedfollows_post](https://github.com/user-attachments/assets/2f23c388-40bf-41b2-80d8-02ac99fee27e)
         
         GET
 
-        image
+        ![feedfollows_get](https://github.com/user-attachments/assets/0c112c3f-b560-4947-a314-680a940c304a)
 
         DELETE
 
-        image
+        ![feedfollows_delete](https://github.com/user-attachments/assets/2b8c387a-2b16-4c4b-9127-6c8fcf2f7202)
 
-    6. #### Post
+    6. #### POST
 
         GET 
 
-        image
+        ![posts_get](https://github.com/user-attachments/assets/cefda5f5-8583-47a2-970f-b81528375373)
 
 
 8. #### Delete SQL files
