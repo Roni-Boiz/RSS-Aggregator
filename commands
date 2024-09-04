@@ -1,28 +1,3 @@
-go mod init github.com/roni-boiz/rss-aggregator
-
-go build
-
-go run .
-go build && ./rss-aggregtor
-
-go get github.com/joho/godotenv
-go mod vendor
-
-sudo apt install postgresql postgresql-contrib
-sudo apt-get install pgadmin3
-
-go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
-go install github.com/pressly/goose/v3/cmd/goose@latest
-
-
-Inside .../sql/schema
-=================
-goose postgres postgres://rssauthuser:postgres@localhost:5432/rssagg up
-goose postgres postgres://rssauthuser:postgres@localhost:5432/rssagg down
-
-sqlc generate
-
-
 Serial No. 	Command 						Description
 1 		psql -d database -U user -W 				Connects to a database under a specific user
 2 		psql -h host -d database -U user -W 			Connect to a database that resides on another host
@@ -46,8 +21,3 @@ Serial No. 	Command 						Description
 20 		\a 							Switch from aligned to non-aligned column output
 21 		\H 							Switch the output to HTML format
 22 		\q 							Exit psql shell
-
-sudo lsof -i :<port_number>
-sudo lsof -i :8000
-
-kill -9 1581600
